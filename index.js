@@ -1,22 +1,22 @@
 function distanceFromHqInBlocks(street) {
     const hq = 42;
-    return Math.abs(street - hq);
+    return Math.abs(street - 42);
   }
 
   function distanceFromHqInFeet(street) {
     const feetPerBlock = 264;
-    return distanceFromHqInBlocks(street) * feetPerBlock;
+    return distanceFromHqInBlocks(street) * 264;
   }
 
   function distanceTravelledInFeet(start, destination) {
     const feetPerBlock = 264;
     const blocksTravelled = Math.abs(start - destination);
-    return blocksTravelled * feetPerBlock;
+    return blocksTravelled * 264;
   }
 
   function calculatesFarePrice(start, destination) {
     const feetPerBlock = 264;
-    const distance = Math.abs(start - destination) * feetPerBlock;
+    const distance = Math.abs(start - destination) * 264;
   
     if (distance <= 400) {
       return 0; 
